@@ -1,0 +1,79 @@
+.od-wrapper{
+    padding-top: 15rem;
+}
+
+.od-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.od-head{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.od-head .tag{
+    color: white;
+}
+
+.od-features{
+    display: flex;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.od-feature{
+   flex: 1;
+   background-color: white;
+   box-shadow: var(--shadow);
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   align-items: center;
+   padding: 1rem;
+   border-radius: 1rem;
+}
+
+.od-feature img{
+    object-fit: fill;
+}
+
+.od-feature a{
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.od-feature button{
+    background: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px rgba(0,0,0, 0.2),
+          inset -8px -8px 12px rgba(0,0,0, 0.2),
+          inset 8px 8px 12px rgba(255, 255, 255, 0.4);
+}
+
+.od-feature button:hover {
+    background: orange;
+  }
+
+  .od-feature button:active {
+    animation: bounce 0.3s;
+ }
+
+ @media(max-width: 990px){
+    .od-features{
+        flex-direction: column;
+    }
+ }
+
+ @media (max-width: 590px){
+    .od-feature{
+        width: 80%;
+        margin: auto;
+    }
+ }

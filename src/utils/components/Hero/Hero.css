@@ -1,0 +1,128 @@
+.h-wrapper{
+    /* background-color: var(--primary-color); */
+    height: 120vh;
+    /* max-width: 100%; */
+    overflow: hidden;
+}
+
+.h-wrapper .container{
+    padding-top: 8rem;
+}
+
+.h-arrow{
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 50rem;
+  max-width: 100%;
+  z-index: 0;
+}
+
+.h-container{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.h-left{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+/* .image-row{
+    display: flex;
+    gap: 2rem;
+}
+
+.person-pill{
+    height: 15rem;
+    width: 6rem;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.person-pill-bg{
+    border-radius: 999px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.person-pill-bg > img{
+    width: 100%;
+    object-fit: cover;
+    scale: 2.2;
+    margin-top: 5rem;
+} */
+
+.h-right{
+    flex: 1.25;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.h-title{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    gap: 2rem;
+    color: greenyellow;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.h-title > :nth-child(3){
+    color: white;
+}
+
+.h-des{
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+}
+
+@media (max-width: 1024px) {
+    .h-wrapper{
+        height: max-content;
+    }
+    .h-wrapper .container{
+        padding-top: 5rem;
+    }
+    .h-container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+        gap: 4rem;
+    }
+    .h-arrow{
+        display: none;
+    }
+
+    .h-right{
+        flex: 1;
+        align-items: center;
+    }
+
+    .h-title{
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .h-des{
+        font-size: 1rem;
+        width: 88%;
+        text-align: center;
+    }
+}
