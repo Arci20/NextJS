@@ -37,7 +37,7 @@ export const Contact = () => {
   return (
     <center>
     <div
-    className="wrapper1">
+    className="wrapper1 object-fill">
 
           <div className="hiw-head">
             <center>
